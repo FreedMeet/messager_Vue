@@ -1,0 +1,58 @@
+.channel{
+	display: flex;
+	flex-direction: column;
+    padding: 2%;
+	&-header{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 30px;
+		h2{
+			font-size: 20px;
+			transition: 1.5s !important;
+		}
+		h2:after{
+			content: '  \2193';
+			font-weight: normal;
+		}
+		h2.active:after{
+			content: '  \2192';
+			font-weight: normal;
+		}
+		img:hover{
+			opacity: 1;
+		}
+	}
+	&-treads{
+		margin-bottom: 30px;
+		opacity: 0.7;
+		display: flex;
+		img{
+			margin-right: 15px;
+		}
+		input{
+			background: transparent;
+			color: white;
+			font-size: 16px;
+			padding: 2%;
+			border: none;
+			outline: none;
+		}
+	}
+	&-list li{
+		list-style-type: none;
+		font-style: italic;
+		padding: 5px;
+		margin-left: 10px;
+		&:before{
+			content: '# ';
+		}
+	}
+	&-count{
+		text-transform: uppercase;
+		opacity: 0.7;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+}
