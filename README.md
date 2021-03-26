@@ -1,4 +1,4 @@
-# social_network
+# Messager
 
 ## Project setup
 ```
