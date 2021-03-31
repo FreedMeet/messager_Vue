@@ -1,48 +1,48 @@
 import {createStore} from 'vuex'
+import facebookIcons from '../assets/profile/ContactsIcons/facebook.svg'
+import instagramIcons from '../assets/profile/ContactsIcons/instagram.svg'
+import twitterIcons from '../assets/profile/ContactsIcons/twitter.svg'
+import linkedinIcons from '../assets/profile/ContactsIcons/linkedin.svg'
 
 export const store = createStore({
     el: '#app',
     state: {
         Sidebar: {
             channels: [
-                {name: "general"},
-                {name: "support"},
-                {name: "marketing"},
-                {name: 'thailand'},
-                {name: 'bali'},
-                {name: 'poland'},
-                {name: 'australia'},
-                {name: 'jobs'},
-                {name: 'startups'},
-                {name: 'italy'},
-                {name: 'freelance'},
+                {name: "channel_1"},
+                {name: "channel_2"},
+                {name: "channel_3"},
+                {name: 'channel_4'},
+                {name: 'channel_5'},
+                {name: 'channel_6'},
+                {name: 'channel_7'}
             ],
             friends: [
-                {name: 'Orlando Diggs'},
-                {name: 'Carmen Velasco'},
-                {name: 'Marie Jensen'},
-                {name: 'Alex Lee'},
-                {name: 'Leo Gill'},
-                {name: 'Britney Cooper'},
+                {name: 'friend_1'},
+                {name: 'friend_2'},
+                {name: 'friend_3'},
+                {name: 'friend_4'},
+                {name: 'friend_5'},
+                {name: 'friend_6'},
             ],
         },
         Profile: {
-            fullName: 'FreedMeet',
+            fullName: 'User',
             photoUrl: '',
-            status: 'This user is fucking tiiired',
+            status: 'User Status',
             contacts: [
-                {facebook: 'https://www.youtube.com/'},
-                {twitter: '#'},
-                {instagram: '#'},
-                {linkedLn: '#'}
+                {key: 'facebook', link: 'https://www.facebook.com', icons: facebookIcons },
+                {key: 'twitter', link: 'https://www.twitter.com', icons: twitterIcons},
+                {key : 'instagram', link: 'https://www.instagram.com', icons: instagramIcons},
+                {key: 'linkedLn', link: 'https://www.linkedin.com', icons: linkedinIcons}
             ],
             info:[
-                {userName: 'userName'},
-                {email: 'email'},
-                {skype: 'skype'},
-                {timeZone: 'timeZone'},
+                {key: 'userName', value: 'userName'},
+                {key: 'email', value: 'email'},
+                {key: 'skype', value: 'skype'},
+                {key: 'timeZone', value: 'timeZone'},
             ],
-            asActive: false
+            isActive: true
         }
     },
 });

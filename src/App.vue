@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar/SidebarContainer";
-import Profile from "@/components/Profile/Profile";
-import {store} from "@/store";
+import Sidebar from "../src/components/Sidebar/SidebarContainer";
+import Profile from "../src/components/Profile/Profile";
+import {store} from "../src/store/index";
 
 export default {
   name: "App",
