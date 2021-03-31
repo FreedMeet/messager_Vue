@@ -1,13 +1,10 @@
 <template>
   <div class="wrapper">
-    <Sidebar class="sidebar" />
-    <div>
-      <ul :key="channel.id" v-for="channel in channels">
-        <li>{{ channel.name }}</li>
-      </ul>
+    <Sidebar class="sidebar"/>
+    <div class="content">
+      <router-view/>
     </div>
-    <router-view class="content" />
-    <Profile class="profile" />
+    <Profile class="profile"/>
   </div>
 </template>
 

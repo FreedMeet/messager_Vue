@@ -10,7 +10,9 @@
     <div class="channel-tags">
       <div class="channel-treads">
         <img alt="chat" :src="chatLogo"/>
-        <input type="text" v-model="search" placeholder="All treads"/>
+        <label>
+          <input type="text" v-model="search" placeholder="All treads"/>
+        </label>
       </div>
 
       <Channels
@@ -49,7 +51,7 @@ export default {
   },
   computed: {
     channels() {
-      return this.$store.state.Sidebar.channels
+      return this.$store.state.channelContent
     },
     friends() {
       return this.$store.state.Sidebar.friends
